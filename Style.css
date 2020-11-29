@@ -467,5 +467,14 @@ img {
   {
     margin-bottom: 5px;
   }
+  .education .content .educationBx 
+  {
+    margin-top: 10px;
+  }
+  .contactInfo 
+  {
+    margin: 20px 0;
+  }
 
 }
+@media
