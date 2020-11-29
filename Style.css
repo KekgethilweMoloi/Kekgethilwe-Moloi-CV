@@ -176,7 +176,52 @@ img {
 }
 
 /*employment*/
+.employment .content
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.employment .content .employmentBx
+{
+  max-width: calc(50% - 40px);
+  padding: 60px 40px;
+  margin: 20px;
+  background: #64b6a6;
+
+}
+
+.employment .content .employmentBx h3
+{
+  margin-top: 40px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #5d737e;
+}
+.employment .content .employmentBx h2
+{
+   color: #5d737e;
+   font-weight: 600;
+   font-size: 24px;
+}
+
+.employment .content .employmentBx p
+{
+  color: #c7d3dd;
+  font-style: italic;
+  font-size: 12px;
+  font-weight: 300;
+  text-align: end;
+}
 /*education*/
+.education
+{
+  background:#111;
+}
+.education .heading
+{
+  color: #c7d3dd
+}
 /*references*/
 /*contact*/
 
