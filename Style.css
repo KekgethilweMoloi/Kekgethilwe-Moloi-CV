@@ -133,3 +133,52 @@ header.sticky ul li a
 img {
   max-width: 100%;
 }
+
+/* projects */
+.projects
+{
+  background: #111;
+}
+.heading.white
+{
+  color: #c7d3dd;
+}
+.projects .content
+{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.projects .content .projectsBx
+{
+  padding: 40px 20px;
+  background: #222;
+  color: #c7d3dd;
+  max-width: 300px;
+  margin: 20px;
+  text-align: center;
+  transition: 0.5s
+}
+.projects .content .projectsBx:hover
+{
+  background: #035e5b;
+}
+.projects .content .projectsBx img
+{
+  max-width: 80px;
+  filter: inveret(1);
+}
+.projects .content .projectsBx h2
+{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/*employment*/
+/*education*/
+/*references*/
+/*contact*/
+
+
+
