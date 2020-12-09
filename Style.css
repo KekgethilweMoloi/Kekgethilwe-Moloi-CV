@@ -99,13 +99,29 @@ header ul li a
   margin: 0 15px;
   color: #c7d3dd;
   text-decoration: none;
+  transition: 0.3s ease color;
 }
+
+header ul li a:hover
+{
+  color: azure;
+}
+
 header.sticky ul li a
 {
   color: #5d737e
 }
 
+header.sticky ul li a:hover
+{
+  color: azure;
+}
+
 /*about me*/
+.about{
+  background: #e8eef3;
+}
+
 .heading {
   width: 100%;
   text-align: center;
@@ -177,9 +193,13 @@ img {
 }
 
 /*employment*/
+.employment
+{
+  background: #e8eef3;
+}
 .employment .content
 {
-  display: flex;
+  display: center;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -266,7 +286,7 @@ img {
 /*contact*/
 .contact
 {
-  background: #c7d3dd;
+  background: #d9e4ee;
 }
 .contact .content .contactInfo .contactInfoBx a
 {
@@ -276,6 +296,47 @@ img {
 {
   display: flex;
   flex-direction: column;
+
+}
+
+#status
+{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 90%;
+  max-width: 100%;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 8px;
+} 
+
+#status.success
+{
+  background-color: #DFF2BF;
+  animation: status 4s ease forwards;
+}
+
+#status.error
+{
+  background-color:#FFD2D2;
+  animation: status 4s ease forwards;
+}
+
+@keyframes status
+{
+  0%{
+    opacity: 1;
+    pointer-events: all;
+  }
+  90%{
+    opacity: 1;
+    pointer-events: all;
+  }
+  100%{
+    opacity: 0;
+    pointer-events: none;
+  }
 
 }
 .formBx form h3, .contactInfo h3
@@ -295,14 +356,15 @@ img {
   outline: none;
   background: #2222;
   color: #fff;
-  resize:none;
+  resize: none;
+  min-width: 600px;
 
 
 }
 .formBx form textarea
 {
   min-height: 200px;
-  width: 700px;
+  min-width: 600px;
 }
 .formBx form input::placeholder,
 .formBx form textarea::placeholder
@@ -312,10 +374,17 @@ img {
 .formBx form input[type="submit"]
 {
   max-width: 100px;
-  background:#035e5b;
+  background: #035e5b;
   cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 2px;
+  min-width: 600px;
+  transition: 0.3 ease background-color;
+}
+
+.formBx form input[type="submit"]:hover
+{
+  background-color: #64b6ac;
 }
 .contactInfo
 {
