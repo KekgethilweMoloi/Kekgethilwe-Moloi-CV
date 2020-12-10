@@ -50,6 +50,10 @@ section {
   color: #5d737e;
 }
 
+.btn:hover {
+  color: azure;
+}
+
 /* header*/
 header {
   position: fixed;
@@ -282,7 +286,32 @@ img {
   text-align: end;
 
 }
+.education .content .educationBx button
+{
+  position: relative;
+  background: #64b6ac;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 200px;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #5d737e;
+  border: none;
 
+}
+
+.education .content .educationBx button a{
+  text-decoration: none;
+  color: #5d737e;
+}
+
+.education .content .educationBx button a:hover
+{
+  color: azure;
+}
 /*contact*/
 .contact
 {
